@@ -26,7 +26,7 @@ $社会保険料 = $健康保険料 + $年金負担額;
 $雇用引去額 = intval($給与 * 6/1000);
 $雇用保険額 = intval($給与 * 95/10000);
 $課税対象額 = $給与 - $健保引額 -$年金引去額 - $雇用引去額;
-$子ども・子育て拠出金 =intval($給与 * 0.035);
+$子ども・子育て拠出金 =intval($給与 * 0.0036);
 
 // 所得税
 $sql = 'select * from income_tax where taxable_sal_min<=:sal and :sal < taxable_sal_max;';
